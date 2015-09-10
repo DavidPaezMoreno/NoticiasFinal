@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+        <title>Noticias UANL</title>
+
+        <!--Librerias agregadas David Páez -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:600,400' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="css/uanlApp.css" />
+        <link rel="javascript" type="text/javascript" href="js/noticiasUsabilidad.js" />
+        
+        <!--DATE PICKER-->
+        
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.js"></script>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- OutDate jquery
+        <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+        -->
+        <script src="js/cargarNoticias.js"></script>
+        <script src="js/noticiasUsabilidad.js"></script>
+        
+
+        <script type="text/javascript">
+            
+        </script>
+
+    </head>
+    <body>
+        
+        <!--Contenedor del menú-->
+        <div class="menuHeader">
+            <span class="iconMenu" id="menuLateral_icon">
+                <img src="img/iconos/menu_icon-01.png">
+            </span>
+            
+            <span class="title" id="title_index">
+                <a href="index.html">
+                Noticias
+                </a>
+            </span>
+            
+            
+            <span class="iconMenuder" id="Calendario">
+                <img src="img/iconos/calendar_icon2.png">
+            </span>
+            <span class="iconMenuder" id="seleccionadorCategorias_icon">
+                <img src="img/iconos/more_options_icon_white-01.png">
+            </span>
+        </div>
+        <div class="headerSpace"></div>
+        
+        <!-- <input type="text" data-role="date"> -->
+
+        <div class="menuLateral">
+            <div class="lateralMenu_text header">Categorías</div>
+            <div class="lateralMenu_text opcion" categoria="Todo">Todo</div>
+            <div class="lateralMenu_text opcion" categoria="Actualidad / Realidad / Oportunidad"><img src="img/WHITE/actualidad_oportunidad.png"> Actualidad / Realidad / Oportunidad</div>
+            <div class="lateralMenu_text opcion" categoria="Ciencia y tecnología"><img src="img/WHITE/ciencia_y_tecnologia.png"> Ciencia y tecnología</div>
+            <div class="lateralMenu_text opcion" categoria="Responsabilidad social"><img src="img/WHITE/responsabilidad_social.png"> Responsabilidad social</div>
+            <div class="lateralMenu_text opcion" categoria="Sustentabilidad"><img src="img/WHITE/sustentabilidad.png"> Sustentabilidad</div>
+            <div class="lateralMenu_text opcion" categoria="Vinculación "><img src="img/WHITE/vinculacion.png"> Vinculación</div>
+            <div class="lateralMenu_text opcion" categoria="Salud"><img src="img/WHITE/salud.png"> Salud</div>
+            <div class="lateralMenu_text opcion" categoria="Estudiantiles"><img src="img/WHITE/estudiantil.png"> Estudiantiles</div>
+            <div class="lateralMenu_text opcion" categoria="Deportes"><img src="img/WHITE/deporte.png"> Deportes</div>
+            <div class="lateralMenu_text opcion" categoria="Arte y cultura"><img src="img/WHITE/arte_y_cultura.png"> Arte y cultura</div>
+            <div class="lateralMenu_text opcion" categoria="Investigación"><img src="img/WHITE/investigacion.png"> Investigación</div>
+            <div class="lateralMenu_text opcion" categoria="Institucional"><img src="img/WHITE/institucional.png"> Institucional</div>
+            <div class="lateralMenu_text opcion" categoria="Internacional"><img src="img/WHITE/internacional.png"> Internacional</div>
+            <div class="lateralMenu_text opcion" categoria="Académico"><img src="img/WHITE/academico.png"> Académico</div>
+            <div class="blank"></div>
+        </div>
+
+        <div class="seleccionadorCategorias">
+            <div class=" opcion" categoria="Actualidad / Realidad / Oportunidad">   <img src="img/iconos/checked.png"> Actualidad / Realidad / Oportunidad</div>
+            <div class=" opcion" categoria="Ciencia y tecnología">                  <img src="img/iconos/checked.png"> Ciencia y tecnología</div>
+            <div class=" opcion" categoria="Responsabilidad social">                <img src="img/iconos/checked.png"> Responsabilidad social</div>
+            <div class=" opcion" categoria="Sustentabilidad">                       <img src="img/iconos/checked.png"> Sustentabilidad</div>
+            <div class=" opcion" categoria="Vinculación ">                           <img src="img/iconos/checked.png"> Vinculación</div>
+            <div class=" opcion" categoria="Salud">                                 <img src="img/iconos/checked.png"> Salud</div>
+            <div class=" opcion" categoria="Estudiantiles">                         <img src="img/iconos/checked.png"> Estudiantiles</div>
+            <div class=" opcion" categoria="Deportes">                              <img src="img/iconos/checked.png"> Deportes</div>
+            <div class=" opcion" categoria="Arte y cultura">                        <img src="img/iconos/checked.png"> Arte y cultura</div>
+            <div class=" opcion" categoria="Investigación">                         <img src="img/iconos/checked.png"> Investigación</div>
+            <div class=" opcion" categoria="Institucional">                         <img src="img/iconos/checked.png"> Institucional</div>
+            <div class=" opcion" categoria="Internacional">                         <img src="img/iconos/checked.png"> Internacional</div>
+            <div class=" opcion" categoria="Académico">                             <img src="img/iconos/checked.png"> Académico</div>
+            <div class="blank"></div>
+        </div>
+
+        <div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
+        <!--Contenedor de noticias -->
+        <div class="contenedorNoticias" id="contenedorNoticias">
+            
+            <!--Encabezado de rango de fechas -->
+            
+                
+
+                <!--Noticias individuales -->
+                
+        </div>
+
+    </body>
+</html>
