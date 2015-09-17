@@ -10,17 +10,17 @@ body{
 .clear { clear: both; }
 
 .menuHeader{
-	height: 56px;
-	margin: 0px;
-	border: 0px;
-	padding: 0px;
+	height: 3em;
+	margin: 0em;
+	border: 0em;
+	padding: 0em;
 
 	position: fixed;
 	display: table;
 
 	z-index: 1;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 0.8em;
+	padding-right: 0.8em;
 
 	display:-webkit-box;
 	-webkit-box-align:center;
@@ -28,18 +28,18 @@ body{
 	background-color: #003b74;
 
 	font-family: 'Open Sans', sans-serif;
-	font-size: 17px;
+	font-size: 1.2em;
 	font-weight: bold;
 	color: white;
 }
 
 .headerSpace{
-	height: 56px;
-	min-height: 56px;
+	height: 3em;
+	min-height: 3em;
 }
 
 .menuHeader .title{
-	min-height: 50px;
+	min-height: 2em;
 	width: 100%;
 	display: table-cell;
 	text-align: center;
@@ -48,46 +48,45 @@ body{
 
 a{
 	font-family: 'Open Sans', sans-serif;
-	font-size: 17px;
+	font-size: 1.2em;
 	font-weight: bold;
 	color: white;
 	text-decoration: none;
 }
 
 .menuHeader .iconMenu, .menuHeader .iconMenuder{
-	min-height: 22px;
-	min-width: 22px;
+	min-height: 3em;
+	min-width: 3em;
 	display: table-cell;
-	padding: 5px;
-
-	
+	text-align: center;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;	
 }
 
-.iconMenu:hover, .iconMenuder:hover{
+.iconMenu:hover, .iconMenuder:active{
 	background-color: #002448;
-	border-radius: 3px;
 }
+
 
 .contenedorNoticias{
-	padding-top: 10px;
+	padding-top: 0.8em;
 	text-align: center;
-
-
 }
+
 
 .fechaLista{
 
 	text-align: left;
-	padding-left: 20px;
+	padding-left: 1em;
 
 	font-family: 'Open Sans', sans-serif;
-	font-size: 15px;
+	font-size: 1em;
 	font-weight: bold;
 	color: #a3a3a3;
 }
 
 #fechaListaSpan{
-	padding-left: 5px;
+	padding-left: 0.5em;
 }
 
 .noticiaIndividual{
@@ -95,12 +94,9 @@ a{
 	width: auto;
 	text-align: center;
 
-	margin-left: auto;
-	margin-right: auto;
-
-	padding-top: 6px;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-top: 0.5em;
+	padding-left: 2em;
+	padding-right: 2em;
 	
 	margin-top: 10px;
 	margin-bottom: 20px;
@@ -115,35 +111,42 @@ a{
 }
 
 .contenedorMiniaturaNoticia{
-	max-height: 122;
+	max-width: 244px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .miniaturaNoticia{
-	display: block;
-	float: left;
-	min-height: 61px;
-	min-width: 122px;
+	display: block;	
+	max-height: 122px;
+	min-width: 244px;
 
 	background-color: #cccccc;
 	background-image: url("img/miniatura_default.png");
+	background-position: center;
 }
 
 .miniaturaNoticia > img{
-	width: 140px;
+	width: 244px;
 
 }
 
 .tituloNoticia{
 	display: block;
-	float: left;
 
-	max-height: 122px;
-	max-width: 150px;
-	padding-left: 3px;
+	max-width: 244px;
+	
+	margin-top: 0.2em;
+	padding-left: 0.3em;
+
+	border-left-style: solid;
+	border-width: 5px;
+	border-color: #003b74;
+
 
 	text-align: left;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 15px;
+	font-size: 1em;
 	font-weight: bold;
 	color: #232323;
 }
@@ -151,22 +154,22 @@ a{
 .resumenNoticia{
 	display: block;
 
-	margin-top: 10px;
-	max-width: 284px;
+	margin-top: 0.5em;
+	max-width: 244px;
 
 	text-align: justify;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 13px;
+	font-size: 0.9em;
 	font-weight: bold;
 	color: #242424;
 }
 
 .texto_detalle_miniatura{
-	padding-top: 3px;
+	padding-top: 0.1em;
 
 	text-align: left;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 12px;
+	font-size: 0.8em;
 	font-weight: bold;
 	color: #b6b6b6;
 }
@@ -193,9 +196,10 @@ a{
 	border-bottom-style: solid;
 	border-color: #003465;
 
+	vertical-align: middle;
 	text-align: left;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 15px;
+	font-size: 0.9em;
 	font-weight: bold;
 	color: white;
 }
@@ -211,7 +215,7 @@ a{
 
 .lateralMenu_text.header{
 	padding-left: 15px;
-	font-size: 17px;
+	font-size: 1.1em;
 	border-bottom-width: 2px;
 	border-bottom-style: solid;
 	border-color: white;
@@ -229,9 +233,10 @@ a{
     bottom: 0;
 	overflow: scroll;
 
+	vertical-align: middle;
 	text-align: left;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 13px;
+	font-size: 1em;
 	font-weight: bold;
 	color: #232323;
 }
@@ -274,7 +279,7 @@ a{
 }
 
 .contenedorCategoriaFecha {
-	margin-top: 15px;
+	margin-top: 0.3em;
 	border-bottom-style: solid;
 	border-bottom-color: #242424;
 	border-bottom-width: 1px;
@@ -285,10 +290,10 @@ a{
 	display: block;
 	float: left;
 
-	padding-left: 10px;
+	padding-left: 1em;
 	text-align: left;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 12px;
+	font-size: 0.8em;
 	color: #242424;
 	margin-bottom: 3px;
 }
@@ -297,31 +302,34 @@ a{
 	float: right;
 	float: inherit;
 
-	padding-right: 10px;
+	padding-right: 1em;
 	text-align: right;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 12px;
+	font-size: 0.8em;
 	color: #242424;
 	margin-bottom: 3px;
 }
 
 .tituloNotaCompleta{
-	padding-left: 15px;
+	padding-left: 0.2em;
 	text-align: left;
-	margin-bottom: 13px;
+	margin-bottom: 0.1em;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 15px;
+	font-size: 1.1em;
 	font-weight: bold;
 	color: #232323;
 }
 
 .cuerpoNotaCompleta{
-	padding-left: 15px;
-	padding-right: 15px;
+	padding-left: 0.7em;
+	padding-right: 0.7em;
 	text-align: justify;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 13px;	
+	font-size: 0.95em	!important;
 	color: #242424;
+}
+.cuerpoNotaCompleta span{
+	font-size: 0.95em	!important;
 }
 
 .tituloLinksRelacionados{
@@ -329,7 +337,7 @@ a{
 	text-align: left;
 	margin-bottom: 13px;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 13px;
+	font-size: 0.95em;
 	font-weight: bold;
 	color: #232323;
 }
@@ -340,7 +348,7 @@ a{
 	padding-right: 15px;
 	text-align: justify;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 13px;	
+	font-size: 0.95em;	
 	color: #242424;
 }
 
@@ -378,12 +386,12 @@ a{
 	padding-top: 15px;	
 	font-family: 'Open Sans', sans-serif;
 	font-weight: bold;
-	font-size: 14px;	
+	font-size: 0.92em;	
 	color: #232323;
 }
 
 .blank{
-	height: 56px;
+	height: 3em;
 }
 
 
@@ -399,7 +407,7 @@ a{
     vertical-align: center;
     text-align: center;
 	background-color: black;
-	max-height: 300px;
+	max-height: 50%;
 }
 
 .carrusel_item{
@@ -411,7 +419,7 @@ a{
 }
 
 .carrusel_item img{
-	height: 300px;
+	height: 100%;
 
 	display: inline-block;
 
