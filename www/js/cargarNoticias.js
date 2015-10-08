@@ -2,8 +2,8 @@
 	var globalData;
 	
 	$( document ).ready(function() {
-		var UrlMyJson= 'http://www.uanl.mx/utilerias/json/noticias.php';
-		//var UrlMyJson= 'http://provisionalobjetos.uanl.mx/pruebaphp.php';
+		//var UrlMyJson= 'http://www.uanl.mx/utilerias/json/noticias.php';
+		var UrlMyJson= 'http://provisionalobjetos.uanl.mx/pruebaphp.php';
 		var datosJson;
 		
 		$.ajax({
